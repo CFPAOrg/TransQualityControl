@@ -105,3 +105,6 @@ venv.bak/
 
 # pycharm
 .idea
+
+# 测试文件
+project
