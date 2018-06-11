@@ -11,7 +11,7 @@ class FileReader:
     # 获取语言文件，处理得到一个 dict
     def lang_to_dict(self, file_path):
         lang_dict = {}
-        with open(file_path, 'r', errors='ignore') as f:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
             for line in f.readlines():
                 if line is not None and line[0] != '#' and '=' in line:
                     line_list = line.split('=', 1)
@@ -19,12 +19,12 @@ class FileReader:
         return lang_dict
 
 
-class EscapeCheck:
+class FormatCheck:
     def __init__(self):
         pass;
 
-    def escape_check(self, en_dict, zh_dict, modid):
-        dict_out = {}
+    def format_check(self, en_dict, zh_dict, modid):
+        list_out = []
         for k in en_dict.keys():
             if k in zh_dict and '%' in en_dict[k]:
                 """
@@ -37,10 +37,10 @@ class EscapeCheck:
                 conversion：参数，一般有 d，c，b，s，f，e，x，h；
                 考虑到语言文件中从没有用 flags 参数的，略去不写。
               """
-                escape_regex = re.compile('%((\\d)+\$)?(\\d)*(\.(\\d)+)?[dcbsfexh]')
-                if len(escape_regex.findall(en_dict[k])) != len(escape_regex.findall(zh_dict[k])):
-                    dict_out[k] = zh_dict[k] + '@@' + modid
-        return dict_out
+                format_regex = re.compile('%([1-9]+\$)?(\\d)*(\.(\\d)+)?[dcbsfexh]')
+                if len(format_regex.findall(en_dict[k])) != len(format_regex.findall(zh_dict[k])):
+                    list_out.append({'modid': modid, 'key': k, 'en_us': en_dict[k], 'zh_cn': zh_dict[k]})
+        return list_out
 
 
 class FileFinder:
@@ -58,14 +58,14 @@ class FileFinder:
 
 if __name__ == '__main__':
     file_reader = FileReader()
-    escape_check = EscapeCheck()
+    format_check = FormatCheck()
     file_finder = FileFinder()
 
-    dict_total = {}
+    list_total = []
 
     for modid in file_finder.file_finder('./project/assets'):
         en_dict = file_reader.lang_to_dict('./project/assets/{}/lang/en_us.lang'.format(modid))
         zh_dict = file_reader.lang_to_dict('./project/assets/{}/lang/zh_cn.lang'.format(modid))
-        dict_total.update(escape_check.escape_check(en_dict, zh_dict, modid))
+        list_total.extend(format_check.format_check(en_dict, zh_dict, modid))
 
-    print(dict_total)
+    print(list_total)
