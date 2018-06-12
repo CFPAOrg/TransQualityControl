@@ -33,9 +33,9 @@ if __name__ == '__main__':
     key_duplicate = []  # 存储重复的语言文件 key
     dict_total = {}  # 最后的输出列表
 
-    for modid in file_finder('./project/assets'):
-        en_dict = lang_to_dict('./project/assets/{}/lang/en_us.lang'.format(modid))
-        zh_dict = lang_to_dict('./project/assets/{}/lang/zh_cn.lang'.format(modid))
+    for modid in file_finder('../project/assets'):
+        en_dict = lang_to_dict('../project/assets/{}/lang/en_us.lang'.format(modid))
+        zh_dict = lang_to_dict('../project/assets/{}/lang/zh_cn.lang'.format(modid))
 
         en_dict_total[modid] = en_dict
         zh_dict_total[modid] = zh_dict

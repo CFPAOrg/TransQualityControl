@@ -33,8 +33,8 @@ def main_check(zh_dict, modid):
 if __name__ == '__main__':
     list_total = []
 
-    for modid in file_finder('./project/assets'):
-        zh_dict = lang_to_dict('./project/assets/{}/lang/zh_cn.lang'.format(modid))
+    for modid in file_finder('../project/assets'):
+        zh_dict = lang_to_dict('../project/assets/{}/lang/zh_cn.lang'.format(modid))
         list_total.extend(main_check(zh_dict, modid))
 
     print(json.dumps(list_total, ensure_ascii=False))

@@ -63,9 +63,9 @@ if __name__ == '__main__':
 
     list_total = []
 
-    for modid in file_finder.file_finder('./project/assets'):
-        en_dict = file_reader.lang_to_dict('./project/assets/{}/lang/en_us.lang'.format(modid))
-        zh_dict = file_reader.lang_to_dict('./project/assets/{}/lang/zh_cn.lang'.format(modid))
+    for modid in file_finder.file_finder('../project/assets'):
+        en_dict = file_reader.lang_to_dict('../project/assets/{}/lang/en_us.lang'.format(modid))
+        zh_dict = file_reader.lang_to_dict('../project/assets/{}/lang/zh_cn.lang'.format(modid))
         list_total.extend(format_check.format_check(en_dict, zh_dict, modid))
 
     print(list_total)
