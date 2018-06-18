@@ -25,6 +25,45 @@ def file_finder(assets_path):
     return check_file
 
 
+def duplicate_main(path):
+    key_total = []  # 存储所有语言文件 key
+    en_dict_total = {}  # 存储所有的英文语言文件键值对
+    zh_dict_total = {}  # 存储所有的中文语言文件键值对
+
+    key_duplicate = []  # 存储重复的语言文件 key
+    dict_total = {}  # 最后的输出列表
+
+    for modid in file_finder(path):
+        en_dict = lang_to_dict('{}/{}/lang/en_us.lang'.format(path, modid))
+        zh_dict = lang_to_dict('{}/{}/lang/zh_cn.lang'.format(path, modid))
+
+        en_dict_total[modid] = en_dict
+        zh_dict_total[modid] = zh_dict
+        key_total.extend(list(en_dict.keys()))
+
+    _dict = Counter(key_total)
+    for _key in _dict:
+        if _dict[_key] > 1:
+            key_duplicate.append(_key)
+
+    for i in key_duplicate:
+        dict_one = {}
+        list_en = []
+        list_zh = []
+
+        for j in en_dict_total.keys():
+            if i in en_dict_total[j].keys() and i in zh_dict_total[j].keys():
+                dict_one[j] = {en_dict_total[j][i]: zh_dict_total[j][i]}
+                list_en.append(en_dict_total[j][i])
+                list_zh.append(zh_dict_total[j][i])
+
+        if len(dict_one) > 1:
+            if len(set(list_en)) > 1 or len(set(list_zh)) > 1:
+                dict_total[i] = dict_one
+
+    return json.dumps(dict_total, ensure_ascii=False)
+
+
 if __name__ == '__main__':
     key_total = []  # 存储所有语言文件 key
     en_dict_total = {}  # 存储所有的英文语言文件键值对

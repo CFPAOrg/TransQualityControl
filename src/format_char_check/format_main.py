@@ -2,6 +2,7 @@
 # 所以内容可能反而有点繁琐
 import re
 import os
+import json
 
 
 class FileReader:
@@ -54,6 +55,21 @@ class FileFinder:
                     '{}/{}/lang/zh_cn.lang'.format(assets_path, modid)):
                 check_file.append(modid)
         return check_file
+
+
+def format_main(path):
+    file_reader = FileReader()
+    format_check = FormatCheck()
+    file_finder = FileFinder()
+
+    list_total = []
+
+    for modid in file_finder.file_finder(path):
+        en_dict = file_reader.lang_to_dict('{}/{}/lang/en_us.lang'.format(path, modid))
+        zh_dict = file_reader.lang_to_dict('{}/{}/lang/zh_cn.lang'.format(path, modid))
+        list_total.extend(format_check.format_check(en_dict, zh_dict, modid))
+
+    return json.dumps(list_total, ensure_ascii=False)
 
 
 if __name__ == '__main__':

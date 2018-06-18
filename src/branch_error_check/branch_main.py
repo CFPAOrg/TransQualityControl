@@ -22,12 +22,19 @@ def file_finder(assets_path):
     return check_file
 
 
-def main_check(zh_dict, modid):
+def main_check(zh_dict_in, modid_in):
     list_out = []
-    for k in zh_dict.keys():
-        if '=' in zh_dict[k] and '.' in zh_dict[k]:
-            list_out.append({'modid': modid, 'key': k, 'zh_cn': zh_dict[k]})
+    for k in zh_dict_in.keys():
+        if '=' in zh_dict_in[k] and '.' in zh_dict_in[k]:
+            list_out.append({'modid': modid_in, 'key': k, 'zh_cn': zh_dict_in[k]})
     return list_out
+
+
+def branch_check(path):
+    list_total_in = []
+    for modid in file_finder(path):
+        list_total_in.extend(main_check(lang_to_dict('{}/{}/lang/zh_cn.lang'.format(path, modid)), modid))
+    return json.dumps(list_total_in, ensure_ascii=False)
 
 
 if __name__ == '__main__':
