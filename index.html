@@ -32,7 +32,7 @@
                     <td>{{ format.en_us }}</td>
                     <td>{{ format.zh_cn }}</td>
                     <td style="width:8%">
-                        <a :href="'https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=' + format.key + '&context=on'">[点击进入]</a>
+                        <a :href="'https://weblate.sayori.pw/translate/langpack/' + format.modid + '/zh_cn/?q=' + format.key + '&context=on'">[点击进入]</a>
                     </td>
                 </tr>
             </table>
@@ -60,7 +60,7 @@
                             <td>{{ v.en_us }}</td>
                             <td>{{ v.zh_cn }}</td>
                             <td style="width:8%">
-                                <a :href="'https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=' + value.key + '&context=on'">[点击进入]</a>
+                                <a :href="'https://weblate.sayori.pw/translate/langpack/' + v.mod + '/zh_cn/?q=' + value.key + '&context=on'">[点击进入]</a>
                             </td>
                         </tr>
                     </template>
@@ -83,7 +83,7 @@
                     <td style="width:10%">{{ branch.key }}</td>
                     <td>{{ branch.zh_cn }}</td>
                     <td style="width:8%">
-                        <a :href="'https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=' + branch.key + '&context=on'">[点击进入]</a>
+                        <a :href="'https://weblate.sayori.pw/translate/langpack/' + branch.modid + '/zh_cn/?q=' + branch.key + '&context=on'">[点击进入]</a>
                     </td>
                 </tr>
             </table>
