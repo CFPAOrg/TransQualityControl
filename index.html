@@ -12,10 +12,11 @@
 <body>
     <div class="main">
         <h1>翻译质量检查报告</h1>
-        <h2><i class="fa fa-calendar"></i> 2018-06-18 15:05:32</h2>
+        <h2>
+            <i class="fa fa-calendar"></i> 2018-06-18 15:05:32</h2>
         <div class="sub">
             <h2>格式符检查报告</h2>
-            <table cellspacing="0">
+            <table cellspacing="0" id="format">
                 <tr>
                     <th style="width:3%">编号</th>
                     <th style="width:8%">模组ID</th>
@@ -24,27 +25,22 @@
                     <th>中文文本</th>
                     <th style="width:8%">Weblate</th>
                 </tr>
-                <tr>
-                    <td style="width:3%">1</td>
-                    <td style="width:8%">minecraft</td>
-                    <td style="width:10%">item.apple.name</td>
-                    <td>It will also increase the internal liquid tank by 16000mB per upgrade, and 100000RF storage per upgrade.</td>
-                    <td>二十四字核心价值观其主要内容为富强、民主、文明、和谐，自由、平等、公正、法治， 爱国、敬业、诚信、友善</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:3%">2</td>
-                    <td style="width:8%">minecraft</td>
-                    <td style="width:10%">item.apple.name</td>
-                    <td>It will also increase the internal liquid tank by 16000mB per upgrade, and 100000RF storage per upgrade.</td>
-                    <td>二十四字核心价值观其主要内容为富强、民主、文明、和谐，自由、平等、公正、法治， 爱国、敬业、诚信、友善</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
+                <tr v-for="(format, index) in formats">
+                    <td style="width:3%">{{ index + 1 }}</td>
+                    <td style="width:8%">{{ format.modid }}</td>
+                    <td style="width:10%">{{ format.key }}</td>
+                    <td>{{ format.en_us }}</td>
+                    <td>{{ format.zh_cn }}</td>
+                    <td style="width:8%">
+                        <a :href="'https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=' + format.key + '&context=on'">[点击进入]</a>
+                    </td>
                 </tr>
             </table>
         </div>
+
         <div class="sub">
             <h2>重名key检查报告</h2>
-            <table cellspacing="0">
+            <table cellspacing="0" id="duplicate">
                 <tr>
                     <th style="width:3%">编号</th>
                     <th style="width:10%">key</th>
@@ -53,59 +49,27 @@
                     <th>中文文本</th>
                     <th style="width:8%">Weblate</th>
                 </tr>
-                <tr>
-                    <td style="width:3%" rowspan="3">1</td>
-                    <td style="width:10%" rowspan="3">item.apple.name</td>
-                    <td style="width:8%">minecraft</td>
-                    <td>Apple</td>
-                    <td>苹果</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:8%">baka943</td>
-                    <td>Baka</td>
-                    <td>笨蛋</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:8%">baka</td>
-                    <td>Baka9</td>
-                    <td>笨蛋9</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:3%" rowspan="2">2</td>
-                    <td style="width:10%" rowspan="2">item.apple.name</td>
-                    <td style="width:8%">minecraft</td>
-                    <td>Apple</td>
-                    <td>苹果</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:8%">baka943</td>
-                    <td>Baka</td>
-                    <td>笨蛋</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:3%" rowspan="2">3</td>
-                    <td style="width:10%" rowspan="2">item.apple.name</td>
-                    <td style="width:8%">minecraft</td>
-                    <td>Apple</td>
-                    <td>苹果</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:8%">baka943</td>
-                    <td>Baka</td>
-                    <td>笨蛋</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
+                <template v-for="(value, index) in duplicates">
+                    <tr>
+                        <td style="width:3%" :rowspan="value.items.length + 1">{{ index + 1 }}</td>
+                        <td style="width:10%" :rowspan="value.items.length + 1">{{ value.key }}</td>
+                    </tr>
+                    <template v-for="(v, i) in value.items">
+                        <tr>
+                            <td style="width:8%">{{ v.mod }}</td>
+                            <td>{{ v.en_us }}</td>
+                            <td>{{ v.zh_cn }}</td>
+                            <td style="width:8%">
+                                <a :href="'https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=' + value.key + '&context=on'">[点击进入]</a>
+                            </td>
+                        </tr>
+                    </template>
+                </template>
             </table>
         </div>
         <div class="sub">
             <h2>语言文件串行检查报告</h2>
-            <table cellspacing="0">
+            <table cellspacing="0" id="branch">
                 <tr>
                     <th style="width:2%">编号</th>
                     <th style="width:8%">模组ID</th>
@@ -113,37 +77,45 @@
                     <th>中文文本</th>
                     <th style="width:8%">Weblate</th>
                 </tr>
-                <tr>
-                    <td style="width:2%">1</td>
-                    <td style="width:8%">minecraft</td>
-                    <td style="width:10%">item.apple.name</td>
-                    <td>%1$s 苹果</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:2%">2</td>
-                    <td style="width:8%">minecraft</td>
-                    <td style="width:10%">item.apple.name</td>
-                    <td>%1$s 苹果</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:2%">3</td>
-                    <td style="width:8%">minecraft</td>
-                    <td style="width:10%">item.apple.name</td>
-                    <td>%1$s 苹果</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
-                </tr>
-                <tr>
-                    <td style="width:2%">4</td>
-                    <td style="width:8%">minecraft</td>
-                    <td style="width:10%">item.apple.name</td>
-                    <td>%1$s 苹果</td>
-                    <td style="width:8%"><a href="https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=item.apple.name&context=on">[点击进入]</a></td>
+                <tr v-for="(branch, index) in branches">
+                    <td style="width:2%">{{ index + 1 }}</td>
+                    <td style="width:8%">{{ branch.modid }}</td>
+                    <td style="width:10%">{{ branch.key }}</td>
+                    <td>{{ branch.zh_cn }}</td>
+                    <td style="width:8%">
+                        <a :href="'https://weblate.sayori.pw/translate/langpack/minecraft/zh_cn/?q=' + branch.key + '&context=on'">[点击进入]</a>
+                    </td>
                 </tr>
             </table>
         </div>
     </div>
+
+    <script type="module">
+        import { formats } from "./json/format.js"
+        import { duplicates } from "./json/duplicate.js"
+        import { branches } from "./json/branch.js"
+
+        let format = new Vue({
+            el: "#format",
+            data: {
+                formats: formats
+            }
+        });
+
+        let duplicate = new Vue({
+            el: "#duplicate",
+            data: {
+                duplicates: duplicates
+            }
+        })
+
+        let branch = new Vue({
+            el: "#branch",
+            data: {
+                branches: branches
+            }
+        })
+    </script>
 </body>
 
 </html>
