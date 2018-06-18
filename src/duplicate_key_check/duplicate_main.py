@@ -31,7 +31,7 @@ def duplicate_main(path):
     zh_dict_total = {}  # 存储所有的中文语言文件键值对
 
     key_duplicate = []  # 存储重复的语言文件 key
-    dict_total = {}  # 最后的输出列表
+    list_total = []  # 最后的输出列表
 
     for modid in file_finder(path):
         en_dict = lang_to_dict('{}/{}/lang/en_us.lang'.format(path, modid))
@@ -50,18 +50,29 @@ def duplicate_main(path):
         dict_one = {}
         list_en = []
         list_zh = []
+        list_item = []
 
         for j in en_dict_total.keys():
+            dict_item = {}
             if i in en_dict_total[j].keys() and i in zh_dict_total[j].keys():
-                dict_one[j] = {en_dict_total[j][i]: zh_dict_total[j][i]}
+                dict_item['mod'] = j
+                dict_item['en_us'] = en_dict_total[j][i]
+                dict_item['zh_cn'] = zh_dict_total[j][i]
+
+                list_item.append(dict_item)
+
                 list_en.append(en_dict_total[j][i])
                 list_zh.append(zh_dict_total[j][i])
 
-        if len(dict_one) > 1:
+        if len(list_item) > 1:
             if len(set(list_en)) > 1 or len(set(list_zh)) > 1:
-                dict_total[i] = dict_one
 
-    return json.dumps(dict_total, ensure_ascii=False)
+                dict_one['key'] = i
+                dict_one['items'] = list_item
+
+                list_total.append(dict_one)
+
+    return json.dumps(list_total, ensure_ascii=False)
 
 
 if __name__ == '__main__':
@@ -70,7 +81,7 @@ if __name__ == '__main__':
     zh_dict_total = {}  # 存储所有的中文语言文件键值对
 
     key_duplicate = []  # 存储重复的语言文件 key
-    dict_total = {}  # 最后的输出列表
+    list_total = []  # 最后的输出列表
 
     for modid in file_finder('../project/assets'):
         en_dict = lang_to_dict('../project/assets/{}/lang/en_us.lang'.format(modid))
@@ -89,16 +100,27 @@ if __name__ == '__main__':
         dict_one = {}
         list_en = []
         list_zh = []
+        list_item = []
 
         for j in en_dict_total.keys():
+            dict_item = {}
             if i in en_dict_total[j].keys() and i in zh_dict_total[j].keys():
-                dict_one[j] = {en_dict_total[j][i]: zh_dict_total[j][i]}
+                dict_item['mod'] = j
+                dict_item['en_us'] = en_dict_total[j][i]
+                dict_item['zh_cn'] = zh_dict_total[j][i]
+
+                list_item.append(dict_item)
+
                 list_en.append(en_dict_total[j][i])
                 list_zh.append(zh_dict_total[j][i])
 
-        if len(dict_one) > 1:
+        if len(list_item) > 1:
             if len(set(list_en)) > 1 or len(set(list_zh)) > 1:
-                dict_total[i] = dict_one
 
-    print(json.dumps(dict_total, ensure_ascii=False))
-    print(len(dict_total))
+                dict_one['key'] = i
+                dict_one['items'] = list_item
+
+                list_total.append(dict_one)
+
+    print(json.dumps(list_total, ensure_ascii=False))
+    print(len(list_total))
