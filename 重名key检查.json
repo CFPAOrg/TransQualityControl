@@ -1,0 +1,1230 @@
+{
+  "tile.crate.name": {
+    "abyssalcraft": {
+      "Wooden Crate": "木制板条箱"
+    },
+    "cfm": {
+      "Crate": "板条箱"
+    },
+    "harvestcraft": {
+      "Crate": "板条箱"
+    }
+  },
+  "item.staff.name": {
+    "abyssalcraft": {
+      "Staff of The Gatekeeper": "守门者之杖"
+    },
+    "roots": {
+      "Staff": "法杖"
+    }
+  },
+  "item.cloth.name": {
+    "abyssalcraft": {
+      "Washcloth": "洗碟布"
+    },
+    "bionisation3": {
+      "Cloth": "布"
+    }
+  },
+  "item.coin.name": {
+    "abyssalcraft": {
+      "Coin": "钱币"
+    },
+    "thaumcraft": {
+      "Gold Coin": "金币"
+    }
+  },
+  "fluid.oxygen": {
+    "advancedrocketry": {
+      "Oxygen": "氧气"
+    },
+    "nuclearcraft": {
+      "Oxygen": "氧气"
+    },
+    "rockhounding_chemistry": {
+      "Oxygen": "纯氧"
+    }
+  },
+  "fluid.hydrogen": {
+    "advancedrocketry": {
+      "Hydrogen": "氢气"
+    },
+    "nuclearcraft": {
+      "Hydrogen": "氕"
+    }
+  },
+  "item.obsidian_helmet.name": {
+    "aether_legacy": {
+      "Obsidian Helmet": "黑曜头盔"
+    },
+    "tp": {
+      "Obsidian Helmet": "黑曜石头盔"
+    }
+  },
+  "item.obsidian_chestplate.name": {
+    "aether_legacy": {
+      "Obsidian Chestplate": "黑曜胸甲"
+    },
+    "tp": {
+      "Obsidian Chestplate": "黑曜石胸甲"
+    }
+  },
+  "item.obsidian_leggings.name": {
+    "aether_legacy": {
+      "Obsidian Leggings": "黑曜护腿"
+    },
+    "tp": {
+      "Obsidian Leggings": "黑曜石裤子"
+    }
+  },
+  "item.obsidian_boots.name": {
+    "aether_legacy": {
+      "Obsidian Boots": "黑曜战靴"
+    },
+    "tp": {
+      "Obsidian Boots": "黑曜石靴子"
+    }
+  },
+  "item.iron_ring.name": {
+    "aether_legacy": {
+      "Iron Ring": "坚铁戒指"
+    },
+    "primal": {
+      "Iron Ring": "铁戒指"
+    }
+  },
+  "tile.incubator.name": {
+    "aether_legacy": {
+      "Incubator": "孵化器"
+    },
+    "jurassicraft": {
+      "Incubator": "恒温箱"
+    }
+  },
+  "tile.freezer.name": {
+    "aether_legacy": {
+      "Freezer": "冰冻器"
+    },
+    "cfm": {
+      "Fridge": "冰箱"
+    }
+  },
+  "item.stone_hammer.name": {
+    "ancientwarfare": {
+      "Stone Hammer": "石锤"
+    },
+    "progressiontweaks": {
+      "Rock Hammer": "石锤"
+    },
+    "roots": {
+      "Stone Hammer": "石锤"
+    },
+    "tp": {
+      "Stone Hammer": "石锤"
+    }
+  },
+  "item.gold_hammer.name": {
+    "ancientwarfare": {
+      "Gold Hammer": "金锤"
+    },
+    "roots": {
+      "Golden Hammer": "金锤"
+    }
+  },
+  "item.diamond_hammer.name": {
+    "ancientwarfare": {
+      "Diamond Hammer": "钻石锤子"
+    },
+    "roots": {
+      "Diamond Hammer": "钻石锤"
+    }
+  },
+  "commands.error.arg.invalid": {
+    "armorplus": {
+      "Invalid arguments": "参数无效"
+    },
+    "bloodarsenal": {
+      "Invalid arguments": "无效参数"
+    },
+    "bloodmagic": {
+      "Invalid arguments": "无效参数"
+    }
+  },
+  "commands.error.arg.missing": {
+    "armorplus": {
+      "Not enough arguments": "参数缺失"
+    },
+    "bloodarsenal": {
+      "Not enough arguments": "参数不足"
+    },
+    "bloodmagic": {
+      "Not enough arguments": "参数不足"
+    }
+  },
+  "commands.error.arg.player.missing": {
+    "armorplus": {
+      "You must specify which player you wish to perform this action on.": "你必须指定某个玩家作为该操作的目标。"
+    },
+    "bloodarsenal": {
+      "You must specify which player you wish to perform this action on.": "你必须指定希望哪个玩家做这件事"
+    },
+    "bloodmagic": {
+      "You must specify which player you wish to perform this action on.": "你必须指定一个玩家来执行该命令。"
+    }
+  },
+  "commands.error.404": {
+    "armorplus": {
+      "Command not found!": "找不到此命令！"
+    },
+    "bloodarsenal": {
+      "Command not found!": "找不到命令！"
+    },
+    "bloodmagic": {
+      "Command not found!": "命令未找到！"
+    }
+  },
+  "commands.error.unknown": {
+    "armorplus": {
+      "Unknown command! Please use /armorplus help": "找不到此命令！请使用 /armorplus help 获得帮助信息"
+    },
+    "bloodarsenal": {
+      "Unknown command!": "未知命令！"
+    },
+    "bloodmagic": {
+      "Unknown command!": "未知的命令！"
+    }
+  },
+  "commands.error.perm": {
+    "armorplus": {
+      "You do not have permission to use this command.": "你没有权限使用此命令。"
+    },
+    "bloodarsenal": {
+      "You do not have permission to use this command.": "你没有使用该命令的权限"
+    },
+    "bloodmagic": {
+      "You do not have permission to use this command.": "你没有使用该命令的权限。"
+    }
+  },
+  "commands.success": {
+    "armorplus": {
+      "Executed successfully": "执行成功"
+    },
+    "bloodarsenal": {
+      "Executed successfully": "成功执行"
+    },
+    "bloodmagic": {
+      "Executed successfully": "成功执行"
+    }
+  },
+  "commands.help.usage": {
+    "armorplus": {
+      "/armorplushelp": "/armorplus help"
+    },
+    "bloodarsenal": {
+      "/bloodarsenal help": "/bloodarsenal help"
+    },
+    "bloodmagic": {
+      "/bloodmagic help": "/bloodmagic help"
+    }
+  },
+  "commands.help.help": {
+    "armorplus": {
+      "Displays the help information for the \"/armorplus\" command.": "显示 \"/armorplus\" 指令的帮助信息。"
+    },
+    "bloodarsenal": {
+      "Displays the help information for the \"/bloodarsenal\" command.": "为 \"/bloodarsenal\" 指令系列显示帮助信息。"
+    },
+    "bloodmagic": {
+      "Displays the help information for the \"/bloodmagic\" command.": "使用\"/bloodmagic help\"命令显示指令列表。"
+    }
+  },
+  "potion.potency.2": {
+    "astralsorcery": {
+      "III": "III"
+    },
+    "cyclicmagic": {
+      "III": "III"
+    },
+    "evilcraft": {
+      "III": "3"
+    },
+    "soot": {
+      "III": "III"
+    }
+  },
+  "potion.potency.3": {
+    "astralsorcery": {
+      "IV": "IV"
+    },
+    "cyclicmagic": {
+      "IV": "IV"
+    },
+    "evilcraft": {
+      "IV": "4"
+    },
+    "soot": {
+      "IV": "IV"
+    },
+    "xreliquary": {
+      "IV": "IV"
+    }
+  },
+  "potion.potency.4": {
+    "astralsorcery": {
+      "V": "V"
+    },
+    "cyclicmagic": {
+      "V": "V"
+    },
+    "evilcraft": {
+      "V": "5"
+    },
+    "soot": {
+      "V": "V"
+    },
+    "xreliquary": {
+      "V": "V"
+    }
+  },
+  "language.name": {
+    "autoverse": {
+      "English": "Simplified Chinese"
+    },
+    "bibliocraft": {
+      "English": "Simplified Chinese"
+    },
+    "enderutilities": {
+      "English": "Simplified Chinese"
+    },
+    "itemscroller": {
+      "English": "英语"
+    },
+    "justenoughdimensions": {
+      "English": "简体中文"
+    },
+    "llor": {
+      "English": "简体中文"
+    },
+    "magicbees": {
+      "English": "Simplified Chinese"
+    },
+    "nex": {
+      "English": "Chinese"
+    },
+    "placementpreview": {
+      "English": "英语"
+    }
+  },
+  "language.region": {
+    "autoverse": {
+      "US": "cn"
+    },
+    "bibliocraft": {
+      "US": "CN"
+    },
+    "enderutilities": {
+      "US": "CN"
+    },
+    "itemscroller": {
+      "US": "CN"
+    },
+    "justenoughdimensions": {
+      "US": "CN"
+    },
+    "llor": {
+      "US": "CN"
+    },
+    "magicbees": {
+      "US": "CN"
+    },
+    "nex": {
+      "United States": "中国大陆"
+    },
+    "placementpreview": {
+      "US": "CN"
+    }
+  },
+  "language.code": {
+    "autoverse": {
+      "en_US": "zh_cn"
+    },
+    "bibliocraft": {
+      "en_US": "zh_CN"
+    },
+    "enderutilities": {
+      "en_US": "zh_CN"
+    },
+    "itemscroller": {
+      "en_US": "zh_CN"
+    },
+    "justenoughdimensions": {
+      "en_US": "zh_CN"
+    },
+    "llor": {
+      "en_US": "zh_CN"
+    },
+    "magicbees": {
+      "en_US": "zh_CN"
+    },
+    "nex": {
+      "en_us": "zh_cn"
+    },
+    "placementpreview": {
+      "en_US": "zh_CN"
+    }
+  },
+  "tooltip.tier": {
+    "backpack": {
+      "Tier:": " 等级:"
+    },
+    "improvedbackpacks": {
+      "Tier": "等级"
+    },
+    "openmodularturrets": {
+      "Tier": "等级"
+    }
+  },
+  "item.backpack.brown.name": {
+    "backpacks16840": {
+      "Backpack": "背包"
+    },
+    "improvedbackpacks": {
+      "Brown Backpack": "棕色背包"
+    }
+  },
+  "material.brass.name": {
+    "basemetals": {
+      "Brass": "黄铜"
+    },
+    "moartinkers": {
+      "Brass": "草"
+    }
+  },
+  "death.attack.darkness": {
+    "beneath": {
+      "%1$swas consumed by the darkness": "%1$s被黑暗所吞噬"
+    },
+    "extrautils2": {
+      "%1$s was consumed by shadows": "%1$s被黑暗吞噬了"
+    }
+  },
+  "death.attack.darkness.player": {
+    "beneath": {
+      "%1$swas consumed by the darkness whilst trying to escape %2$s": "%1$s在试图逃离%2$s时被黑暗吞噬"
+    },
+    "extrautils2": {
+      "%1$s was consumed by shadows while fighting %2$s": "%1$s在与%2$s战斗的时候被黑暗所吞噬了"
+    }
+  },
+  "gui.enabled": {
+    "bettersprinting": {
+      "Enabled": "启用"
+    },
+    "customnpcs": {
+      "Enabled": "开启"
+    }
+  },
+  "gui.disabled": {
+    "bettersprinting": {
+      "Disabled": "禁用"
+    },
+    "customnpcs": {
+      "Disabled": "无效"
+    }
+  },
+  "material.hellfire.name": {
+    "betterwithmods": {
+      "Hellfire": "炼狱之火"
+    },
+    "pewter": {
+      "Hellfire": "地狱火"
+    }
+  },
+  "fluid.tile.lava": {
+    "bigreactors": {
+      "Lava": "岩浆"
+    },
+    "moofluids": {
+      "Lava": "岩浆"
+    },
+    "multistorage": {
+      "Lava": "岩浆"
+    },
+    "shetiphiancore": {
+      "Lava": "熔岩"
+    }
+  },
+  "fluid.honey": {
+    "biomesoplenty": {
+      "Honey": "蜂蜜"
+    },
+    "erebus": {
+      "Honey": "蜂蜜"
+    },
+    "rustic": {
+      "Honey": "蜜糖"
+    }
+  },
+  "item.ash.name": {
+    "biomesoplenty": {
+      "Pile of Ashes": "灰烬堆"
+    },
+    "primal": {
+      "Ash": "灰"
+    }
+  },
+  "tile.lotus.name": {
+    "bionisation3": {
+      "Lotus": "莲花"
+    },
+    "randomthings": {
+      "Lotus": "莲"
+    }
+  },
+  "color.lime": {
+    "buildcraft": {
+      "Lime": "柠檬色"
+    },
+    "thaumcraft": {
+      "Lime": "黄绿色"
+    }
+  },
+  "fluid.oil": {
+    "buildcraft": {
+      "Oil": "原油"
+    },
+    "immersivepetroleum": {
+      "Crude Oil": "原油"
+    },
+    "pneumaticcraft": {
+      "Oil": "石油"
+    },
+    "vefluids": {
+      "Oil": "原油"
+    }
+  },
+  "fluid.fuel": {
+    "buildcraft": {
+      "Fuel": "燃油"
+    },
+    "pneumaticcraft": {
+      "Gasoline": "汽油"
+    },
+    "vefluids": {
+      "Fuel": "燃油"
+    }
+  },
+  "tile.laserBlock.name": {
+    "buildcraft": {
+      "Laser": "镭射器"
+    },
+    "securitycraft": {
+      "Laser Block ": "激光方块 "
+    }
+  },
+  "config.category.arrowSettings.tooltip": {
+    "bullseye": {
+      "Toggle properties for different types of arrows": "设置不同种类箭矢的相关参数"
+    },
+    "stats_keeper": {
+      "Change Config Values InGame": "Change Config Values InGame"
+    }
+  },
+  "tile.ReinforcedStoneBrick.name": {
+    "calculator": {
+      "Reinforced Stone Bricks": "强化石砖"
+    },
+    "sonarcore": {
+      "Reinforced Stone Brick": "强化石砖"
+    }
+  },
+  "tile.ReinforcedDirtBrick.name": {
+    "calculator": {
+      "Reinforced Dirt Bricks": "强化土砖"
+    },
+    "sonarcore": {
+      "Reinforced Dirt Brick": "强化土砖"
+    }
+  },
+  "tile.ClearStableGlass.name": {
+    "calculator": {
+      "Clear Stable Glass": "清澈稳定玻璃"
+    },
+    "sonarcore": {
+      "Clear Stable Glass": "透明稳定玻璃"
+    }
+  },
+  "tile.tank.name": {
+    "car": {
+      "Tank": "油箱"
+    },
+    "jaff": {
+      "Fish Tank": "鱼缸"
+    }
+  },
+  "tile.fluid_pipe.name": {
+    "car": {
+      "Fluid Pipe": "液体管道"
+    },
+    "cyclicmagic": {
+      "Fluid Cable": "流体管道"
+    }
+  },
+  "item.wheel.name": {
+    "cdm": {
+      "Wheel": "轮子"
+    },
+    "flansmod": {
+      "Small Wheel": "小型轮子"
+    }
+  },
+  "fluid.methanol": {
+    "rockhounding_chemistry": {
+      "Methanol": "甲醇"
+    },
+    "soot": {
+      "Pyroligneous Spirit": "甲醇"
+    }
+  },
+  "tile.bin.name": {
+    "cfm": {
+      "Bin": "垃圾桶"
+    },
+    "embers": {
+      "Bin": "储物仓"
+    }
+  },
+  "tile.mirror.name": {
+    "cfm": {
+      "Mirror": "镜子"
+    },
+    "thaumcraft": {
+      "Magic Mirror": "魔镜"
+    }
+  },
+  "tile.grill.name": {
+    "cfm": {
+      "Grill": "烧烤架"
+    },
+    "overloaded": {
+      "Grill": "烤架"
+    }
+  },
+  "tile.charcoal_block.name": {
+    "charcoalblock": {
+      " Charcoal Block": "木炭块"
+    },
+    "tp": {
+      "CharcoalBlock": "木炭块"
+    }
+  },
+  "entity.pShardChicken.name": {
+    "chickens": {
+      "Prismarine Shard Chicken": "海晶碎片鸡"
+    },
+    "morechickens": {
+      "Prismarine Shard Chicken": "海晶石碎片鸡"
+    }
+  },
+  "entity.pCrystalChicken.name": {
+    "chickens": {
+      "Prismarine Crystal Chicken": "海晶砂粒鸡"
+    },
+    "morechickens": {
+      "Prismarine Crystal Chicken": "海晶水晶鸡"
+    }
+  },
+  "item.invalid.name": {
+    "cofh": {
+      "Invalid Item (Destroy)": "无效物品，请即刻销毁之"
+    },
+    "gregtech": {
+      "Invalid item": "无效物品"
+    }
+  },
+  "gui.delete": {
+    "customnpcs": {
+      "Are you sure you want to delete this?": "是否确实要删除此项？"
+    },
+    "mekanism": {
+      "Delete": "删除"
+    }
+  },
+  "gui.remove": {
+    "customnpcs": {
+      "Remove": "删除"
+    },
+    "ftblib": {
+      "Remove": "移除"
+    },
+    "mekanism": {
+      "Remove": "移除"
+    },
+    "moreplayermodels": {
+      "Remove": "删除"
+    }
+  },
+  "enchantment.autosmelt": {
+    "cyclicmagic": {
+      "Auto-Smelt": "自动冶炼"
+    },
+    "endercore": {
+      "Auto-Smelt": "熔炼"
+    }
+  },
+  "fluid.xpjuice": {
+    "cyclicmagic": {
+      "Experience": "液态经验"
+    },
+    "enderio": {
+      "Liquid XP": "液态经验"
+    }
+  },
+  "item.emerald_pickaxe.name": {
+    "cyclicmagic": {
+      "Emerald Pickaxe": "绿宝石镐"
+    },
+    "primal": {
+      "Emerald Pickaxe": "绿宝石镐"
+    },
+    "tp": {
+      "Emerald Pickxe": "绿宝石镐"
+    }
+  },
+  "tile.block_enchanter.name": {
+    "cyclicmagic": {
+      "Powered Enchanter": "能量附魔台"
+    },
+    "enderio": {
+      "Enchanter": "附魔器"
+    }
+  },
+  "potion.effect.haste": {
+    "cyclicmagic": {
+      "Potion of Haste": "速掘药水"
+    },
+    "inspirations": {
+      "Potion of Haste": "急迫药水"
+    },
+    "quark": {
+      "Potion of Haste": "急迫药水"
+    }
+  },
+  "splash_potion.effect.haste": {
+    "cyclicmagic": {
+      "Splash Potion of Haste": "喷溅型速掘药水"
+    },
+    "inspirations": {
+      "Splash Potion of Haste": "喷溅型急迫药水"
+    },
+    "quark": {
+      "Splash Potion of Haste": "喷溅型急迫药水"
+    }
+  },
+  "lingering_potion.effect.haste": {
+    "cyclicmagic": {
+      "Lingering Potion of Haste": "滞留型速掘药水"
+    },
+    "inspirations": {
+      "Lingering Potion of Haste": "滞留型急迫药水"
+    },
+    "quark": {
+      "Lingering Potion of Haste": "滞留型急迫药水"
+    }
+  },
+  "tipped_arrow.effect.haste": {
+    "cyclicmagic": {
+      "Arrow of Haste": "速掘之箭"
+    },
+    "inspirations": {
+      "Arrow of Haste": "急迫之箭"
+    },
+    "quark": {
+      "Arrow of Haste": "急迫之箭"
+    }
+  },
+  "potion.effect.resistance": {
+    "cyclicmagic": {
+      "Potion of Resistance": "抗性提升药水"
+    },
+    "inspirations": {
+      "Potion of Resistance": "抗性提升药水"
+    },
+    "quark": {
+      "Potion of Fortitude": "抗性提升药水"
+    }
+  },
+  "splash_potion.effect.resistance": {
+    "cyclicmagic": {
+      "Splash Potion of Resistance": "喷溅型抗性提升药水"
+    },
+    "inspirations": {
+      "Splash Potion of Resistance": "喷溅型抗性提升药水"
+    },
+    "quark": {
+      "Splash Potion of Fortitude": "喷溅型抗性提升药水"
+    }
+  },
+  "lingering_potion.effect.resistance": {
+    "cyclicmagic": {
+      "Lingering Potion of Resistance": "滞留型抗性提升药水"
+    },
+    "inspirations": {
+      "Lingering Potion of Resistance": "滞留型抗性提升药水"
+    },
+    "quark": {
+      "Lingering Potion of Fortitude": "滞留型抗性提升药水"
+    }
+  },
+  "tipped_arrow.effect.resistance": {
+    "cyclicmagic": {
+      "Arrow of Resistance": "抗性提升之箭"
+    },
+    "inspirations": {
+      "Arrow of Resistance": "抗性提升之箭"
+    },
+    "quark": {
+      "Arrow of Fortitude": "刚毅之箭"
+    }
+  },
+  "tile.item_pump.name": {
+    "cyclicmagic": {
+      "Item Extraction Cable": "物品提取泵管道"
+    },
+    "embers": {
+      "Item Extractor": "物品提取泵管道"
+    }
+  },
+  "tile.item_pipe.name": {
+    "cyclicmagic": {
+      "Item Cable": "物品管道"
+    },
+    "embers": {
+      "Item Pipe": "物品管道"
+    }
+  },
+  "message.shiftMessage": {
+    "deepresonance": {
+      "Press Shift": "按Shift"
+    },
+    "rftoolspower": {
+      "Press Shift": "按住 Shift"
+    }
+  },
+  "moon.crescentWaning": {
+    "eleccore": {
+      "Waning Crescent": "残月"
+    },
+    "magicbees": {
+      "Waning Crescent": "亏蛾眉月"
+    }
+  },
+  "moon.crescentWaxing": {
+    "eleccore": {
+      "Waxing Crescent": "娥眉月"
+    },
+    "magicbees": {
+      "Waxing Crescent": "凸娥眉月"
+    }
+  },
+  "death.attack.ember": {
+    "emberroot": {
+      "Slain by a Golem Flame": "%1$s已被焚化。"
+    },
+    "embers": {
+      "%1$s was incinerated": "%1$s已被焚化。"
+    }
+  },
+  "tile.block_tank.name": {
+    "embers": {
+      "Fluid Vessel": "液体容器"
+    },
+    "enderio": {
+      "Fluid Tank": "流体储罐"
+    }
+  },
+  "tile.mixer.name": {
+    "embers": {
+      "Mixer Centrifuge": "混合离心器"
+    },
+    "thutcore": {
+      "Mixer [WIP]": "搅拌机[WIP]"
+    }
+  },
+  "tile.ore_quartz.name": {
+    "embers": {
+      "Quartz Ore": "石英矿"
+    },
+    "thaumcraft": {
+      "Quartz Ore": "石英矿石"
+    }
+  },
+  "enchantment.minecraft.protection.desc": {
+    "enchdesc": {
+      "Reduces damage from most sources. ": "减少大多数伤害 "
+    },
+    "wawla": {
+      "Reduces damage from most sources. ": "减少大多数伤害"
+    }
+  },
+  "enchantment.minecraft.aqua_affinity.desc": {
+    "enchdesc": {
+      "Increasesmining speed while underwater. ": "加快水下挖掘速度。 "
+    },
+    "wawla": {
+      "Increases mining speed while underwater. ": "加快水下挖掘速度。"
+    }
+  },
+  "enchantment.minecraft.flame.desc": {
+    "enchdesc": {
+      "Arrows fired from the bow will deal additional fire damage. ": "点燃被弓箭攻击的目标。 "
+    },
+    "wawla": {
+      "Arrows fired from the bow will deal additional fire damage. ": "点燃被弓箭攻击的目标。"
+    }
+  },
+  "enchantment.randomthings.magnetic.desc": {
+    "enchdesc": {
+      "Moves mined items a bit closer to you.": "将物品吸引向你。"
+    },
+    "randomthings": {
+      "The drops from blocks you mine with a tool that has the magnetic enchantment go directly into your inventory instead of dropping on the ground.": "拥有磁性附魔的工具，挖掘出的掉落物将直接进入你的物品栏，而不是落在地上。"
+    }
+  },
+  "item.item_material.gear_stone.name": {
+    "enderio": {
+      "Stone Compound Gear": "石齿轮"
+    },
+    "exnihilocreatio": {
+      "Stone Gear": "石齿轮"
+    }
+  },
+  "gui.texture": {
+    "extraambiance": {
+      "Texture": "材质"
+    },
+    "tails": {
+      "Texture Select": "材质"
+    }
+  },
+  "gui.delay": {
+    "extraambiance": {
+      "Delay": "延迟"
+    },
+    "mekanism": {
+      "Delay": "延时"
+    }
+  },
+  "gui.volume": {
+    "extraambiance": {
+      "Volume": "音量"
+    },
+    "mekanism": {
+      "Volume": "体积"
+    }
+  },
+  "death.attack.acid": {
+    "factorytech": {
+      "%1$s stepped in H2SO4 thinking it was H2O": "%1$s 踩在硫酸上，并认为那是水"
+    },
+    "rockhounding_chemistry": {
+      "\"%1$s took refuge in a somewhat acid irony\"": "\"%1$s 被酸泡了\""
+    }
+  },
+  "gui.accept": {
+    "ftblib": {
+      "Accept": "接受"
+    },
+    "inventorypets": {
+      "Accept": "采纳"
+    }
+  },
+  "gui.active": {
+    "ftblib": {
+      "Active": "激活"
+    },
+    "mekanism": {
+      "Water-Cooled": "水冷"
+    }
+  },
+  "material.wood": {
+    "gravestone": {
+      "Wood": "木头"
+    },
+    "gregtech": {
+      "Wood": "木"
+    }
+  },
+  "material.stone": {
+    "gravestone": {
+      "Stone": "石头"
+    },
+    "gregtech": {
+      "Stone": "石"
+    }
+  },
+  "for.bees.species.gold": {
+    "gregtech": {
+      "Gold": "金"
+    },
+    "morebees": {
+      "Golden": "金"
+    }
+  },
+  "for.bees.species.uranium": {
+    "gregtech": {
+      "Uranium": "铀"
+    },
+    "morebees": {
+      "Uranic": "铀"
+    }
+  },
+  "recipe.type.workbench": {
+    "hammercore": {
+      "Crafting": "合成"
+    },
+    "thaumcraft": {
+      "Workbench": "工作台"
+    }
+  },
+  "recipe.type.construct": {
+    "hammercore": {
+      "Multiblock Structure": "多方块结构"
+    },
+    "thaumcraft": {
+      "Mystical Construct": "神秘多方块结构"
+    }
+  },
+  "recipe.clickthrough": {
+    "hammercore": {
+      "Click to View Recipe": "点击查看配方"
+    },
+    "thaumcraft": {
+      "Click for recipe": "点击以研究"
+    }
+  },
+  "fluid.uranium": {
+    "immersiveengineering": {
+      "Molten Uranium": "熔融铀"
+    },
+    "nuclearcraft": {
+      "Molten Uranium": "熔融Uranium"
+    }
+  },
+  "desc.immersiveengineering.info.multiblock.IE:AlloySmelter": {
+    "immersiveengineering": {
+      "Alloy Kiln": "合金窑"
+    },
+    "immersivepetroleum": {
+      "Alloy Smelter": "合金窑"
+    }
+  },
+  "desc.immersiveengineering.info.multiblock.IE:AutoWorkbench": {
+    "immersiveengineering": {
+      "Automated Engineer's Workbench": "自动工程师装配台"
+    },
+    "immersivepetroleum": {
+      "Automated Workbench": "装配机"
+    }
+  },
+  "item.amber.name": {
+    "jurassicraft": {
+      "{stored} in Amber": "{stored}琥珀"
+    },
+    "thaumcraft": {
+      "Amber": "琥珀"
+    }
+  },
+  "item.syringe.name": {
+    "jurassicraft": {
+      "{dino} Syringe": "{dino}胚胎注射器"
+    },
+    "rftools": {
+      "Syringe": "注射器"
+    }
+  },
+  "tile.snad.red.name": {
+    "justanothersnad": {
+      "Red Snad": "红色子沙"
+    },
+    "snad": {
+      "Red Snad": "红子沙"
+    }
+  },
+  "tile.silver_lamp.name": {
+    "missing_pieces": {
+      "Silver Lamp": "银灯"
+    },
+    "tp": {
+      "LightGray Lamp": "亮灰色灯"
+    }
+  },
+  "material.refinedglowstone.name": {
+    "moartinkers": {
+      "Refined Glowstone": "强化萤石"
+    },
+    "plustic": {
+      "Refined Glowstone": "强化荧石"
+    }
+  },
+  "material.manasteel.name": {
+    "moartinkers": {
+      "Manasteel": "魔钢"
+    },
+    "plustic": {
+      "Manasteel": "魔力钢"
+    }
+  },
+  "tile.blockcontroller.name": {
+    "modularmachinery": {
+      "Machine Controller": "机械控制器"
+    },
+    "zettaindustries": {
+      "Super Conductor Controller": "超导体控制器"
+    }
+  },
+  "item.dropper_module.name": {
+    "modularrouters": {
+      "Dropper Module": "放掷模块"
+    },
+    "simplyconveyors": {
+      "Dropper Module": "投掷器模块"
+    }
+  },
+  "item.fluid_module.name": {
+    "modularrouters": {
+      "Fluid Module": "流体模块"
+    },
+    "rftools": {
+      "Fluid Screen Module": "流体模块"
+    }
+  },
+  "item.ma.charm_mining_aoe.name": {
+    "mysticalagradditions": {
+      "Charm: Mining AOE": "附魔：开采AOE"
+    },
+    "mysticalagriculture": {
+      "Charm: Mining AOE": "魔符：采矿AOE"
+    }
+  },
+  "fluid.redstone": {
+    "nuclearcraft": {
+      "Molten Redstone": "熔融红石"
+    },
+    "thermalfoundation": {
+      "Destabilized Redstone": "不稳定红石"
+    }
+  },
+  "fluid.glowstone": {
+    "nuclearcraft": {
+      "Molten Glowstone": "熔融荧石"
+    },
+    "thermalfoundation": {
+      "Energized Glowstone": "充能液态荧石"
+    }
+  },
+  "fluid.ender": {
+    "nuclearcraft": {
+      "Molten Ender": "熔融末影珍珠"
+    },
+    "thermalfoundation": {
+      "Resonant Ender": "谐振末影珍珠"
+    }
+  },
+  "fluid.cryotheum": {
+    "nuclearcraft": {
+      "Molten Cryotheum": "熔融凛冰"
+    },
+    "thermalfoundation": {
+      "Gelid Cryotheum": "极寒之凛冰"
+    }
+  },
+  "material.thaumium.name": {
+    "pewter": {
+      "Thaumium": "神秘金属"
+    },
+    "plustic": {
+      "Thaumium": "神秘"
+    }
+  },
+  "item.bark_jungle.name": {
+    "primal": {
+      "Jungle Wood Bark": "丛林树皮"
+    },
+    "roots": {
+      "Jungle Bark": "丛林树皮"
+    }
+  },
+  "item.bark_oak.name": {
+    "primal": {
+      "Oak Bark": "橡木树皮"
+    },
+    "roots": {
+      "Oak Bark": "橡树皮"
+    }
+  },
+  "item.silver_dust.name": {
+    "primal": {
+      "Silver Dust": "银粉"
+    },
+    "tp": {
+      "LightGray Glowstone Dust": "亮灰萤石粉"
+    }
+  },
+  "item.flint_shears.name": {
+    "primal": {
+      "Flint Shears": "燧石剪刀"
+    },
+    "tp": {
+      "Flint Shears": "燧石剪"
+    }
+  },
+  "tile.thatch.name": {
+    "primal": {
+      "Thatch": "茅草"
+    },
+    "roots": {
+      "Thatch": "茅草堆"
+    }
+  },
+  "item.void_seed.name": {
+    "primal": {
+      "Equisetum Ineris Spore": "虚空苔草孢子"
+    },
+    "thaumcraft": {
+      "Void Seed": "虚空种子"
+    }
+  },
+  "item.peace_essence.name": {
+    "rftools": {
+      "Peace Essence": "和平元素"
+    },
+    "rftoolsdim": {
+      "Peace Essence": "和平要素"
+    }
+  },
+  "item.pouch.name": {
+    "roots": {
+      "Powder Pouch": "花瓣粉袋"
+    },
+    "tp": {
+      "Big Pouch": "大袋子"
+    }
+  },
+  "effect.tipsy": {
+    "rustic": {
+      "Inebriated": "醉酒"
+    },
+    "soot": {
+      "Tipsy": "微醺"
+    }
+  },
+  "tile.flesh_block.name": {
+    "thaumcraft": {
+      "Block of Flesh": "血肉方块"
+    },
+    "tp": {
+      "Compressed Flesh Block": "压缩腐肉块"
+    }
+  }
+}

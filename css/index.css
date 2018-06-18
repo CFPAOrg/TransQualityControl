@@ -1,0 +1,63 @@
+.main {
+    margin: 3% 10% 5% 10%;
+    padding: 1%;
+    background-color: #fcfcfc;
+    text-align: center;
+    font-family: "华文中宋";
+    box-shadow: 1px 1px 15px rgb(206, 206, 206, 10);
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    font-weight: 0px;
+}
+
+.sub {
+    background-color: #f4f4f4;
+    padding: 1%;
+    margin: 5%;
+    box-shadow: 1px 1px 25px rgb(206, 206, 206, 10);
+    border: 1px solid #dedede;
+    border-radius: 2px;
+}
+
+table {
+    margin: auto;
+    width: 95%;
+    font-size: 12px;
+    font-family: "consolas", "微软雅黑";
+}
+
+h2 {
+    color: #383838;
+}
+
+table th,
+table td {
+    padding: 4px;
+    vertical-align: middle;    
+    line-height: 1.2rem;
+    border-top: 1px solid #c6c6c6;
+    margin: auto;
+    width: 25%;
+    color: #333333;
+}
+
+
+tr:hover td {
+    background-color: #d4d4d4;
+    transition: 0.3s background-color;
+    cursor: context-menu;
+}
+
+a {
+    font-size: 11px;
+    color: #ebebeb;
+    padding: 4px;
+    text-decoration: none;
+    background-color: #5a5a5a;
+    border-radius: 3px;
+    margin: auto;
+}
+
+a:hover {
+    background-color: #286ac6;
+}
