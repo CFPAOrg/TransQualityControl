@@ -108,3 +108,7 @@ venv.bak/
 
 # 测试文件
 project
+#json
+branch.json
+duplicate.json
+format.json
