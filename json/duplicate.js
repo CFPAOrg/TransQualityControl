@@ -1383,28 +1383,6 @@ export let duplicates = [{
     "zh_cn": "熔融Uranium"
   }]
 }, {
-  "key": "desc.immersiveengineering.info.multiblock.IE:AlloySmelter",
-  "items": [{
-    "mod": "immersiveengineering",
-    "en_us": "Alloy Kiln",
-    "zh_cn": "合金窑"
-  }, {
-    "mod": "immersivepetroleum",
-    "en_us": "Alloy Smelter",
-    "zh_cn": "合金窑"
-  }]
-}, {
-  "key": "desc.immersiveengineering.info.multiblock.IE:AutoWorkbench",
-  "items": [{
-    "mod": "immersiveengineering",
-    "en_us": "Automated Engineer's Workbench",
-    "zh_cn": "自动工程师装配台"
-  }, {
-    "mod": "immersivepetroleum",
-    "en_us": "Automated Workbench",
-    "zh_cn": "装配机"
-  }]
-}, {
   "key": "item.amber.name",
   "items": [{
     "mod": "jurassicraft",
