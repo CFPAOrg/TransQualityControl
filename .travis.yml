@@ -10,6 +10,8 @@ script:
 - cp -f ./branch.js ./pages/js
 - cp -f ./duplicate.js ./pages/js
 - cp -f ./format.js ./pages/js
+- cp -f ./dir.js ./pages/js
+- cp -f ./word.js ./pages/js
 - cp -f ./time.js ./pages/js
 
 deploy:

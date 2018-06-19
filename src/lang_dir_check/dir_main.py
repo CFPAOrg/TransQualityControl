@@ -1,6 +1,5 @@
-import os
-import re
 import json
+import os
 
 
 def finder(path, dir_list):
@@ -20,24 +19,18 @@ def dir_main(path):
 
     finder(path, _list)
     for i in _list:
-        if '.lang' in i:
-            format_regex = re.compile('{}/assets/.*?/lang/(.*?)\.lang'.format(path))
-            list_out.extend(format_regex.findall(i))
+        if 'zh_cn.lang' not in i and 'en_us.lang' not in i and 'zh_cn_old.lang' not in i and '.md' not in i and '.png' not in i and '.txt' not in i and '.json' not in i and '.mcmeta' not in i and '.bin' not in i:
+            list_out.append(i)
 
-    return json.dumps(list(set(list_out)), ensure_ascii=False)
+    return json.dumps(list_out, ensure_ascii=False)
 
 if __name__ == '__main__':
     _list = []
     list_out = []
 
-    finder('project', _list)
+    finder('../project', _list)
     for i in _list:
-        if '.lang' in i:
-            format_regex = re.compile('project/assets/.*?/lang/(.*?)\.lang')
-            list_out.extend(format_regex.findall(i))
-            if len(format_regex.findall(i)) != 1:
-                print(i)
-            elif format_regex.findall(i)[0] == 'zh':
-                print(i)
+        if 'zh_cn.lang' not in i and 'en_us.lang' not in i and 'zh_cn_old.lang' not in i and '.md' not in i and '.png' not in i and '.txt' not in i and '.json' not in i and '.mcmeta' not in i and '.bin' not in i:
+            list_out.append(i)
 
-    print(set(list_out))
+    print(json.dumps(list_out, ensure_ascii=False))
