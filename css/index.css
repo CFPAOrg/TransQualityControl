@@ -1,18 +1,16 @@
 .main {
-    margin: 3%;
-    padding: 1%;
+    padding-top: 2%;
     background-color: #fcfcfc;
     text-align: center;
     font-family: "华文中宋";
     box-shadow: 1px 1px 15px rgb(206, 206, 206, 10);
     border: 1px solid #ebebeb;
     border-radius: 2px;
-    font-weight: 0px;
 }
 
 .sub {
     background-color: #f4f4f4;
-    padding: 2%;
+    padding: 1%;
     margin: 1%;
     box-shadow: 1px 1px 25px rgb(206, 206, 206, 10);
     border: 1px solid #dedede;
@@ -20,7 +18,6 @@
 }
 
 table {
-    margin: auto;
     padding: 8px;
     font-size: 12px;
     font-family: "consolas", "微软雅黑";
@@ -32,6 +29,7 @@ table {
 
 h2 {
     color: #383838;
+    margin-bottom: 2%;
 }
 
 table th {
