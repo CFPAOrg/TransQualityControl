@@ -5,10 +5,12 @@ python:
 script:
 - git clone https://github.com/CFPAOrg/Minecraft-Mod-Language-Package.git
 - git clone -b gh-pages https://github.com/CFPAOrg/TransQualityControl.git pages
+- cp -r ./src/duplicate_key_check/lang ./Minecraft-Mod-Language-Package/project/assets/minecraft
 - python3 main.py --projectDir ./Minecraft-Mod-Language-Package/project
 - cp -f ./branch.js ./pages/js
 - cp -f ./duplicate.js ./pages/js
 - cp -f ./format.js ./pages/js
+- cp -f ./time.js ./pages/js
 
 deploy:
   provider: pages
