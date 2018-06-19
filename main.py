@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
 
     def time_gen():
-        dict_time = {"time": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}
+        dict_time = {"time": time.time() * 1000}
         return json.dumps(dict_time, ensure_ascii=False)
 
 
