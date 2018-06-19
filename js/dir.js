@@ -1,0 +1,1 @@
+export let dirs=["./Minecraft-Mod-Language-Package/project/assets/hats/lang/zh.lang", "./Minecraft-Mod-Language-Package/project/assets/tconstruct/book/zh_cn/language.lang"];
