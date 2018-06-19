@@ -6,14 +6,14 @@
     <title>质量管控报告</title>
     <link rel="stylesheet" href="./css/index.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
     <div class="main">
         <h1>翻译质量检查报告</h1>
-        <h2>
-            <i class="fa fa-calendar"></i> 2018-06-18 15:05:32</h2>
+        <h2 id="time">
+            <i class="fa fa-calendar"></i> {{ times.time }}</h2>
         <div class="sub">
             <h2>格式符检查报告</h2>
             <table cellspacing="0" id="format">
@@ -90,32 +90,7 @@
         </div>
     </div>
 
-    <script type="module">
-        import { formats } from "./js/format.js"
-        import { duplicates } from "./js/duplicate.js"
-        import { branches } from "./js/branch.js"
-
-        let format = new Vue({
-            el: "#format",
-            data: {
-                formats: formats
-            }
-        });
-
-        let duplicate = new Vue({
-            el: "#duplicate",
-            data: {
-                duplicates: duplicates
-            }
-        })
-
-        let branch = new Vue({
-            el: "#branch",
-            data: {
-                branches: branches
-            }
-        })
-    </script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
