@@ -14,7 +14,7 @@
     <div class="main">
         <h1>翻译质量检查报告</h1>
         <h2 id="time">
-            <i class="fa fa-calendar"></i> {{ times.time }}（UTC）</h2>
+            <i class="fa fa-calendar"></i> {{ new Date(times.time).toLocaleString() }}</h2>
         <div class="sub">
             <h2>格式符检查报告</h2>
             <table cellspacing="0" id="format">
