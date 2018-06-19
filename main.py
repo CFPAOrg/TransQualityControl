@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
         # 重写文件
         branch = open("./branch.js", "w", encoding="utf-8")
-        duplicate = open("./word.js", "w", encoding="utf-8")
+        duplicate = open("./duplicate.js", "w", encoding="utf-8")
         format = open("./format.js", "w", encoding="utf-8")
         dir = open('./dir.js', "w", encoding="utf-8")
         word = open('./word.js', "w", encoding="utf-8")
