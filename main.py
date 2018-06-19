@@ -23,7 +23,7 @@ if __name__ == '__main__':
         duplicate = open("./word.js", "w", encoding="utf-8")
         format = open("./format.js", "w", encoding="utf-8")
         dir = open('./dir.js', "w", encoding="utf-8")
-        evaluation = open('./evaluation.js', "w", encoding="utf-8")
+        word = open('./word.js', "w", encoding="utf-8")
         time = open("./time.js", "w", encoding="utf-8")
 
         # 写 js 数据到文件
@@ -31,14 +31,14 @@ if __name__ == '__main__':
         duplicate.write("export let duplicates=" + duplicate_json + ";")
         format.write("export let formats=" + format_json + ";")
         dir.write("export let dirs=" + dir_json + ";")
-        evaluation.write("export let dirs=" + word_json + ";")
+        word.write("export let words=" + word_json + ";")
         time.write("export let times=" + time_json + ";")
 
         branch.close()
         duplicate.close()
         format.close()
         dir.close()
-        evaluation.close()
+        word.close()
         time.close()
 
 
