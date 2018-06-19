@@ -12,20 +12,20 @@ if __name__ == '__main__':
         duplicate_json = src.duplicate_key_check.duplicate_main.duplicate_main(project_assets)
         format_json = src.format_char_check.format_main.format_main(project_assets)
 
-        if (os.path.exists("./branch.json") == True):
-            os.remove("./branch.json")
-        if (os.path.exists("./duplicate.json") == True):
-            os.remove("./duplicate.json")
-        if (os.path.exists("./format.json") == True):
-            os.remove("./format.json")
+        if (os.path.exists("./branch.js") == True):
+            os.remove("./branch.js")
+        if (os.path.exists("./duplicate.js") == True):
+            os.remove("./duplicate.js")
+        if (os.path.exists("./format.js") == True):
+            os.remove("./format.js")
 
         # 删除文件
-        branch = open("./branch.json", "w", encoding="utf-8")
-        duplicate = open("./duplicate.json", "w", encoding="utf-8")
-        formatjson = open("./format.json", "w", encoding="utf-8")
-        branch.write(branch_json)
-        duplicate.write(duplicate_json)
-        formatjson.write(format_json)
+        branch = open("./branch.js", "w", encoding="utf-8")
+        duplicate = open("./duplicate.js", "w", encoding="utf-8")
+        formatjson = open("./format.js", "w", encoding="utf-8")
+        branch.write("export let branches=" + branch_json + ";")
+        duplicate.write("export let duplicates=" + duplicate_json + ";")
+        formatjson.write("export let formats=" + format_json + ";")
         branch.close()
         duplicate.close()
         formatjson.close()

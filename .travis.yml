@@ -1,0 +1,21 @@
+language: python
+python:
+  - "3.6"
+
+script:
+- git clone https://github.com/CFPAOrg/Minecraft-Mod-Language-Package.git
+- git clone -b gh-pages https://github.com/CFPAOrg/TransQualityControl.git pages
+- python3 main.py --projectDir ./Minecraft-Mod-Language-Package/project
+- cp -f ./branch.js ./pages/js
+- cp -f ./duplicate.js ./pages/js
+- cp -f ./format.js ./pages/js
+
+deploy:
+  provider: pages
+  local-dir: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  target-branch: gh-pages
+  on:
+    branch: master
