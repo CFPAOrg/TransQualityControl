@@ -29,7 +29,7 @@ table {
 
 h2 {
     color: #383838;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 table th {
@@ -71,4 +71,18 @@ a {
 
 a:hover {
     background-color: #286ac6;
+}
+
+summary {
+    background-color: #e8e8e8;
+    padding: 3px;
+    color: #414141;
+}
+
+summary:hover {
+    background-color: #d4d4d4;
+    transition: 0.3s background-color;
+    padding: 3px;
+    border-radius: 2px;
+    cursor: context-menu;
 }
