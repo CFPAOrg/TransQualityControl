@@ -1,5 +1,6 @@
-import os
 import json
+import os
+import re
 
 
 # 获取语言文件，处理得到一个 dict
@@ -26,7 +27,10 @@ def main_check(zh_dict_in, modid_in):
     list_out = []
     for k in zh_dict_in.keys():
         if '=' in zh_dict_in[k] and '.' in zh_dict_in[k]:
-            list_out.append({'modid': modid_in, 'key': k, 'zh_cn': zh_dict_in[k]})
+            # 正则匹配
+            format_regex = re.compile('[^\\u4e00-\\u9fa5^\\s]{2,}(\\.[^\\u4e00-\\u9fa5^\\s]{2,})+=.*$')
+            if len(format_regex.findall(zh_dict_in[k])) != 0:
+                list_out.append({'modid': modid_in, 'key': k, 'zh_cn': zh_dict_in[k]})
     return list_out
 
 
