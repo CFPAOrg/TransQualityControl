@@ -1,6 +1,6 @@
-下届
-稿
-香草
-门户
-国防部
-伪造
+nether=下届
+pickaxe=稿
+vanilla=香草
+portal=门户
+mod=国防部
+forge=伪造

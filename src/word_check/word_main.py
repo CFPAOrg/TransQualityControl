@@ -23,15 +23,16 @@ def file_finder(assets_path):
 
 
 def open_check_file(path):
-    word_list = []
+    word_dict = {}
     with open(path, "r", encoding="utf-8") as f:
         for line in f.readlines():
-            word_list.append(line.rstrip('\n'))
-    return word_list
+            line_list = line.rstrip('\n').split('=', 1)
+            word_dict[line_list[0]] = line_list[1]
+    return word_dict
 
 
 def word_check(path, file_path):
-    list_word = open_check_file(file_path)
+    dict_word = open_check_file(file_path)
     list_out = []
 
     modid_en_dict = {}
@@ -42,22 +43,25 @@ def word_check(path, file_path):
         modid_en_dict[modid] = en_dict
         modid_zh_dict[modid] = zh_dict
 
-    for word in list_word:
+    for word in dict_word.keys():
         item_list = []
         for modid in modid_zh_dict.keys():
             zh_dict_in = modid_zh_dict[modid]
             en_dict_in = modid_en_dict[modid]
             for key in zh_dict_in.keys():
-                if word in zh_dict_in[key] and key in en_dict_in.keys():
-                    item_list.append({"mod": modid, "en_us": en_dict_in[key], "zh_cn": zh_dict_in[key]})
-        list_out.append({"word": word, "items": item_list})
+                if key in en_dict_in.keys() and (
+                        word in en_dict_in[key] or word.capitalize() in en_dict_in[key] or word.upper() in en_dict_in[
+                    key]) and dict_word[word] in zh_dict_in[key]:
+                    item_list.append({"mod": modid, "key": key, "en_us": en_dict_in[key], "zh_cn": zh_dict_in[key]})
+        if len(item_list) != 0:
+            list_out.append({"word": word + '丨' + dict_word[word], "items": item_list})
 
     return json.dumps(list_out, ensure_ascii=False)
 
 
 if __name__ == '__main__':
     path = '../project/assets'
-    list_word = open_check_file("../../check_words.txt")
+    dict_word = open_check_file("../../check_words.txt")
     list_out = []
 
     en_dict = {}
@@ -70,19 +74,17 @@ if __name__ == '__main__':
         modid_en_dict[modid] = en_dict
         modid_zh_dict[modid] = zh_dict
 
-    for word in list_word:
+    for word in dict_word.keys():
         item_list = []
         for modid in modid_zh_dict.keys():
             zh_dict_in = modid_zh_dict[modid]
             en_dict_in = modid_en_dict[modid]
             for key in zh_dict_in.keys():
-                if word in zh_dict_in[key] and key in en_dict_in.keys():
-                    item_list.append({"mod": modid, "en_us": en_dict_in[key], "zh_cn": zh_dict_in[key]})
-        if word == "苦力怕":
-            print("爬行者为 ：" + str(len(item_list)))
-        elif word == "爬行者":
-            print("苦力怕为 ：" + str(len(item_list)))
+                if key in en_dict_in.keys() and (
+                        word in en_dict_in[key] or word.capitalize() in en_dict_in[key] or word.upper() in en_dict_in[
+                    key]) and dict_word[word] in zh_dict_in[key]:
+                    item_list.append({"mod": modid, "key": key, "en_us": en_dict_in[key], "zh_cn": zh_dict_in[key]})
+        if len(item_list) != 0:
+            list_out.append({"word": word + '丨' + dict_word[word], "items": item_list})
 
-        list_out.append({"word": word, "items": item_list})
-
-    # print(json.dumps(list_out, ensure_ascii=False))
+    print(json.dumps(list_out, ensure_ascii=False))
