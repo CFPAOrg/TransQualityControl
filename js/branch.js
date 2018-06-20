@@ -1,1 +1,1 @@
-export let branches=[{"modid": "dmonsters", "key": "itemGroup.modTab", "zh_cn": "致命怪物tile.dmonsters.rawConcrete.light_blue.name=天蓝色未干混凝土"}, {"modid": "mist", "key": "advancements.mushroomer.desc", "zh_cn": "分别以生、熟的形式品尝一次朦胧世界中的所有蘑菇tile.a_tree_leaves.name=南洋杉树叶"}];
+export let branches=[];
