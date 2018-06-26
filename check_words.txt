@@ -4,3 +4,6 @@ vanilla=香草
 portal=门户
 mod=国防部
 forge=伪造
+spawn=产卵
+player=球员
+sneak=偷偷
