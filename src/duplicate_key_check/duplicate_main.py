@@ -65,7 +65,7 @@ def duplicate_main(path):
                 list_zh.append(zh_dict_total[j][i])
 
         if len(list_item) > 1:
-            if len(set(list_en)) > 1 or len(set(list_zh)) > 1:
+            if len(set(list_zh)) > 1:
 
                 dict_one['key'] = i
                 dict_one['items'] = list_item
