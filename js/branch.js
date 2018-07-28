@@ -1,1 +1,1 @@
-export let branches=[{"modid": "fw", "key": "comment.fullscreenwindowed.fullscreenmonitor", "zh_cn": "指示用于全屏窗口模式的监视器（从1开始）。 使用0表示在启用的监视器上最大化的默认行为。comment.fullscreenwindowed.onlyRemoveDecorations=如果设置为true，则点击全屏按钮将仅移除标题栏而不调整窗口大小。"}, {"modid": "portality", "key": "module.type.input", "zh_cn": "类型:输入module.type.output=类型:输出"}, {"modid": "recipehandler", "key": "commands.recipes.container.true", "zh_cn": "以下物品被检测出有合成空间: %1$scommands.recipes.empty_ingredients=合成表 %1$s 没有成分 "}];
+export let branches=[];
