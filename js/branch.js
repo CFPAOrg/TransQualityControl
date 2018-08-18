@@ -1,1 +1,1 @@
-export let branches=[{"modid": "forgecraft", "key": "mpatibility.tooltip", "zh_cn": "兼容性功能tile.blockbreaker.name= 方块破坏器"}];
+export let branches=[];
