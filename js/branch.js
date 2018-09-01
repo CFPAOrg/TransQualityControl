@@ -1,1 +1,1 @@
-export let branches=[];
+export let branches=[{"modid": "gravestone", "key": "message.no_deathlocation", "zh_cn": "无死亡地点记录message.died=%s 死亡时间 %s"}];
