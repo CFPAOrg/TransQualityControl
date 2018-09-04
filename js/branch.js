@@ -1,1 +1,1 @@
-export let branches=[{"modid": "extraalchemy", "key": "extraalchemy.config.client", "zh_cn": "视觉选项description.effect.combustion=受到影响的生物会着火，且火会在周围方块蔓延"}, {"modid": "gravestone", "key": "message.no_deathlocation", "zh_cn": "无死亡地点记录message.died=%s 死亡时间 %s"}];
+export let branches=[];
