@@ -1,1 +1,1 @@
-export let branches=[];
+export let branches=[{"modid": "minecolonies", "key": "entity.citizen.demandsTool", "zh_cn": "%s 要求得到 %s。\\nachievement.upgrade.fisher.first=一个钓鱼人。"}];
