@@ -1,1 +1,1 @@
-export let branches=[{"modid": "cfm", "key": "tile.wreath.name", "zh_cn": "花环tile.counter_sink_green.name=绿色厨台（水槽）"}];
+export let branches=[];
