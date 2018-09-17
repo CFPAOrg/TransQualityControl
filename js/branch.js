@@ -1,1 +1,1 @@
-export let branches=[];
+export let branches=[{"modid": "compositegear", "key": "compositegear.itemclass.rangedweapon", "zh_cn": "远程武器item.composite_light_boots.name=复合轻型战靴"}, {"modid": "wings", "key": "config.wings.items.settings.landingExertion.tooltip", "zh_cn": "着陆耐久消耗config.wings.items.settings.requiredLandSatiation.tooltip=要从飞行状态着陆所需的饱食度"}];
