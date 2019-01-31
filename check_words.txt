@@ -12,3 +12,4 @@ ladder=楼梯
 gravel=砂砾
 sandstone=沙岩
 sandstone=沙石
+sandstone=砂石
