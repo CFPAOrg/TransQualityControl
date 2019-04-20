@@ -19,7 +19,7 @@ def dir_main(path):
 
     finder(path, _list)
     for i in _list:
-        if 'zh_cn.lang' not in i and 'en_us.lang' not in i and 'zh_cn_old.lang' not in i and '.md' not in i and '.png' not in i and '.txt' not in i and '.json' not in i and '.mcmeta' not in i and '.bin' not in i:
+        if 'zh_cn.lang' not in i and 'en_us.lang' not in i and 'zh_cn_old.lang' not in i and '.md' not in i and '.png' not in i and '.txt' not in i and '.json' not in i and '.mcmeta' not in i and '.bin' not in i and 'en_us_old.lang' not in i:
             list_out.append(i)
 
     return json.dumps(list_out, ensure_ascii=False)
