@@ -13,3 +13,4 @@ gravel=砂砾
 sandstone=沙岩
 sandstone=沙石
 sandstone=砂石
+lava=岩浆
